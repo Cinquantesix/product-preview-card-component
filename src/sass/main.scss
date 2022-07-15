@@ -1,3 +1,16 @@
+$primary-color: hsl(158, 36%, 37%);
+$secondary-color: hsl(30, 38%, 92%);
+
+$neutral-color-one:  hsl(212, 21%, 14%);
+$neutral-color-two:  hsl(228, 12%, 48%);
+$neutral-color-three: hsl(0, 0%, 100%);
+
+$font-stack: Montserrat, Fraunces, sans-serif;
+
 body {
-    background-color: red;
+    background-color: $secondary-color;
+}
+
+#wrapper {
+    background-color: $neutral-color-three;
 }
