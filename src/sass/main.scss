@@ -5,6 +5,8 @@ $neutral-color-one:  hsl(212, 21%, 14%);
 $neutral-color-two:  hsl(228, 12%, 48%);
 $neutral-color-three: hsl(0, 0%, 100%);
 
+$breakpoint-mobile: 800px;
+
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Montserrat&display=swap');
 
 body {
@@ -108,5 +110,40 @@ body {
     position: absolute;
     bottom: 10px;
     color: $neutral-color-two;
+}
+
+@media (max-width: $breakpoint-mobile){
+    #wrapper {
+        width: 90%;
+        height: inherit;
+        grid-template-columns: repeat(1, 1fr);
+        overflow: inherit;
+        position: absolute;
+
+        .content-left-side {
+            border-radius: 20px 20px 0 0;
+            overflow: hidden;
+            height: 250px;
+        }
+
+        .content-right-side {
+            padding: 10px 20px;
+            height: 100%;
+            background-color: $neutral-color-three;
+            border-radius: 0 0 20px 20px;
+
+            h1 {
+                font-size: 36px;
+                margin: 15px 0;
+            }
+            .content-prices>p:nth-child(1) {
+                margin: 20px 0;
+            }
+        }
+    }
+
+    .attribution {
+        font-size: 10px;
+    }
 }
 

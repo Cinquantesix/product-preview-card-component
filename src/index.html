@@ -17,7 +17,11 @@
     <div id="wrapper">
 
       <div class="content-left-side">
-        <img src="images/image-product-desktop.jpg" alt="Gabrielle Chanel perfume">
+        <picture>
+          <source srcset="images/image-product-mobile.jpg" media="(max-width: 800px)">
+          <source srcset="images/image-product-desktop.jpg" media="(min-width: 801px)">
+          <img src="images/image-product-desktop.jpg" alt="Gabrielle Chanel perfume">
+        </picture>
       </div>
 
       <div class="content-right-side">

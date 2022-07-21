@@ -95,3 +95,34 @@ body {
   bottom: 10px;
   color: hsl(228deg, 12%, 48%);
 }
+
+@media (max-width: 800px) {
+  #wrapper {
+    width: 90%;
+    height: inherit;
+    grid-template-columns: repeat(1, 1fr);
+    overflow: inherit;
+    position: absolute;
+  }
+  #wrapper .content-left-side {
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+    height: 250px;
+  }
+  #wrapper .content-right-side {
+    padding: 10px 20px;
+    height: 100%;
+    background-color: hsl(0deg, 0%, 100%);
+    border-radius: 0 0 20px 20px;
+  }
+  #wrapper .content-right-side h1 {
+    font-size: 36px;
+    margin: 15px 0;
+  }
+  #wrapper .content-right-side .content-prices > p:nth-child(1) {
+    margin: 20px 0;
+  }
+  .attribution {
+    font-size: 10px;
+  }
+}
